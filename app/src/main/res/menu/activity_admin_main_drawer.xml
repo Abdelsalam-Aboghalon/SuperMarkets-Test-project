@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_AddCatActivity"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Categories of Products" />
+        <item
+            android:id="@+id/nav_AdminProducts"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Products" />
+        <item
+            android:id="@+id/nav_AdminSupermarkets"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="SuperMarkets" />
+        <item
+            android:id="@+id/nav_AdminEmp"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Employees" />
+        <item
+            android:id="@+id/nav_AdminClient"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Clients" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_signOut"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Sign Out" />
+            <item
+                android:id="@+id/nav_Help"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

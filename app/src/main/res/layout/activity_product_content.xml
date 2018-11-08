@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdelsalam.supermarket.ProductContent"
+   android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:src="@drawable/logo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/productName"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Product"
+        />
+
+    <GridView
+        android:id="@+id/listProductContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="Quantity"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:background="#35de0f"
+            android:textSize="25dp"
+            android:onClick="plusQty"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:onClick="minQty"
+            android:text="-"
+            android:background="#35de0f"
+            android:textSize="25dp"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+<EditText
+    android:background="#e1e2cd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColorHint="#fff"
+    android:padding="5dp"
+    android:id="@+id/productComment"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:hint="Add Comment"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#717170"
+        android:textColor="#fff"
+        android:text="Add to new Order"/>
+</LinearLayout>
+</LinearLayout>

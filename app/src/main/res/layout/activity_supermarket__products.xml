@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdelsalam.supermarket.Supermarket_Products"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSuperProductName"
+            android:hint="Enter Product name"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSrchPrd"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="search"
+            android:onClick="searchSuperProd"
+            android:background="#312a8b"/>
+
+        <TextView
+            android:id="@+id/superNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Supermarket name"
+            android:textColor="#312a8b"
+            android:textSize="25dp"
+            android:textStyle="italic|bold"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Supermarket Products"
+        android:textColor="#312a8b"
+        android:textSize="25dp"
+        android:textStyle="italic|bold" />
+
+    <GridView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/listOfSuperProduct">
+
+    </GridView>
+
+
+</LinearLayout>
